@@ -10,7 +10,7 @@ const FormData = require("form-data");
 const { fromBuffer } = require("file-type");
 const { exec } = require("child_process");
 
-var mainrouter = require('./index.html')
+//var mainrouter = require('./index.html')
 
 let PORT = process.env.PORT || 8080 || 5000 || 3000
 
@@ -19,8 +19,8 @@ app.listen(PORT, function() {
 })
 
 app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use('/', mainrouter)
+//app.use(express.urlencoded({ extended: true }));
+//app.use(express.json());
+//app.use('/', mainrouter)
 
 module.exports = app
