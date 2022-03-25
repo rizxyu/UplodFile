@@ -10,7 +10,7 @@ const FormData = require("form-data");
 const { fromBuffer } = require("file-type");
 const { exec } = require("child_process");
 
-var mainrouter = require('./index')
+var mainrouter = require('./main')
 
 let PORT = process.env.PORT || 8080 || 5000 || 3000
 
@@ -23,14 +23,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/', mainrouter)
 
-/*Router*/
-__path = process.cwd()
-
-var router = express.Router();
-
-router.get('/', (req, res) => {
-    res.sendFile(__path + '/index.php')
-})
-
-module.exports = router
 module.exports = app
