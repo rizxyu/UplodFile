@@ -10,7 +10,7 @@ const FormData = require("form-data");
 const { fromBuffer } = require("file-type");
 const { exec } = require("child_process");
 
-var mainrouter = require('./main')
+var mainrouter = require('./index.html')
 
 let PORT = process.env.PORT || 8080 || 5000 || 3000
 
