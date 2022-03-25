@@ -11,6 +11,7 @@ const { fromBuffer } = require("file-type");
 const { exec } = require("child_process");
 
 let PORT = process.env.PORT || 8080 || 5000 || 3000
+var app = express()
 
 app.listen(PORT, function() {
   console.log(`Server is working at port ${PORT}`);
