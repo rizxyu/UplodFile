@@ -1,12 +1,17 @@
 <?php
 
-// Cek apakah gak ada folder /app/upload/ (./upload)
-if(!is_dir("/app/upload")) {
-  mkdir("/app/upload/");
+// Create an upload folder if it doesn't exist
+if(!is_dir("./upload")) {
+  mkdir("./upload/");
+}
+
+function getFilesize($file) {
+  $filesize = filesize($file); // bytes
+  $filesize = round($filesize / 1024 / 1024, 1); // megabytes with 1 digit
+  return($filesize);
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -23,15 +28,15 @@ if(!is_dir("/app/upload")) {
         <p style="background-color: white;">Limit File <?php echo ini_get("post_max_size")."B"; ?></p>
         <input id="sub2" type="submit" value="Upload"/>
       </form>
-      <h2 style="background-color: white;">All Upload :</h2>
+      <h2 style="background-color: white;">All Uploaded Files :</h2>
       <?php
 
-      $files = array_values(array_diff(scandir("/app/upload/"), array("..", ".")));
+      $files = array_values(array_diff(scandir("./upload/"), array("..", ".")));
       if(count($files) < 1) {
         echo "Null";
       } else {
         for($a = 0; $a < count($files); $a++) {
-          echo "<p style=\"background-color: white;\">\n            <a href=\"/app/upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <a href=\"/app/upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"/app/upload/".$files[$a]."\">Download</a><hr>\n          </p>";
+          echo "<p style=\"background-color: white;\">\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <span style=\"background-color: white;\">File Size : ".getFilesize("./upload/".$files[$a])." MB</span><br><br>\n            <span style=\"background-color: white;\">Uploaded on ".date("Y-m-d H:m:d", filemtime("./upload/".$files[$a]))."</span><br><br>\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"./upload/".$files[$a]."\">Download</a><hr>\n          </p>";
         };
       };
 
