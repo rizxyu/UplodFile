@@ -16,12 +16,12 @@
       <h2 style="background-color: white;">All Upload :</h2>
       <?php
 
-      $files = array_values(array_diff(scandir("upload/"), array("..", ".")));
+      $files = array_values(array_diff(scandir("/upload/"), array("..", ".")));
       if(count($files) < 1) {
         echo "Null";
       } else {
         for($a = 0; $a < count($files); $a++) {
-          echo "<p style=\"background-color: white;\">\n            <a href=\"upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <a href=\"upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"upload/".$files[$a]."\">Download</a><hr>\n          </p>";
+          echo "<p style=\"background-color: white;\">\n            <a href=\"/upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <a href=\"/upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"/upload/".$files[$a]."\">Download</a><hr>\n          </p>";
         };
       };
 
