@@ -20,3 +20,14 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+/*Router*/
+__path = process.cwd()
+
+var router = express.Router();
+
+router.get('/', (req, res) => {
+    res.sendFile(__path + '/index.php')
+})
+
+module.exports = router
+module.exports = app
