@@ -1,3 +1,13 @@
+<?php
+
+// Cek apakah gak ada folder /app/upload/ (./upload)
+if(!is_dir("/app/upload")) {
+  mkdir("/app/upload/")
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
