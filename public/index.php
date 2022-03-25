@@ -24,7 +24,7 @@ function getFilesize($file) {
     <div class="all">
       <h1 style="background-color: white;">Dragon File Uploader</h1>
       <form method="POST" enctype="multipart/form-data" action="upload.php" style="background-color: white;">
-        <input id="sub1" type="file" name="file" required, multiple/><br>
+        <input id="sub1" type="file" name="file" required multiple/><br>
         <p style="background-color: white;">Limit File <?php echo ini_get("post_max_size")."B"; ?></p>
         <input id="sub2" type="submit" value="Upload"/>
       </form>
