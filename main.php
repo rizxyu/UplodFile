@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 
-<html>
 <div class="all">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
@@ -28,4 +26,3 @@ for ($a = 0; $a < count($files); $a++) {
 </div><br>
 <span><b>File Uploader By Rizxyu</b></span>
 
-</html>
