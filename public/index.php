@@ -45,5 +45,6 @@ function getFilesize($file) {
     </div>
     <br>
     <span><b>File Uploader By <a href="https://github.com/Rizxyu">Rizxyu</a> & <a href="https://github.com/MuhammadRestu999">MuhammadRestu999</a> & <a href="https://github.com/ibrahKrep">ibrahKrep</a></b></span>
+    <script src="index.js"></script>
   </body>
 </html>
