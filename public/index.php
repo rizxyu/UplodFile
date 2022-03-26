@@ -18,7 +18,7 @@ function getFilesize($file) {
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.png">
     <title>Dragon File Uploader</title>
   </head>
   <body>
