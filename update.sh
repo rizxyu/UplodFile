@@ -4,7 +4,7 @@ echo "Deleting old folders..."
 rm -rf UplodFile
 sleep 0.5
 echo "Downloading a new folder..."
-https://github.com/Rizxyu/UplodFile
+git clone https://github.com/Rizxyu/UplodFile
 sleep 0.5
 cd UplodFile
 echo "Done!"
