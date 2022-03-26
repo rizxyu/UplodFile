@@ -2,6 +2,6 @@
 
 By ibrah Modified Rizxyu
 
-## demo
+## Demo
 
 [`Here`](https://dragonupfile.herokuapp.com/)
