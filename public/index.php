@@ -22,7 +22,13 @@ function getFilesize($file) {
     <title>Dragon File Uploader</title>
   </head>
   <body>
-    <div class="all">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Login</a>
+      <a href="#">Report Bug</a>
+    </div>
+<span onclick="openNav()">open</span>
+    <div class="all" id="main">
       <h1 style="background-color: white;">Dragon File Uploader</h1>
       <form method="POST" enctype="multipart/form-data" action="upload.php" style="background-color: white;">
         <input id="sub1" type="file" name="file" required multiple/><br>
