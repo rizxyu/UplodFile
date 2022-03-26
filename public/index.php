@@ -36,7 +36,7 @@ function getFilesize($file) {
         echo "Null";
       } else {
         for($a = 0; $a < count($files); $a++) {
-          echo "<p style=\"background-color: white;\">\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <span style=\"background-color: white;\">File Size : ".getFilesize("./upload/".$files[$a])." MB</span><br><br>\n            <span style=\"background-color: white;\">Uploaded on ".date("Y-m-d H:m:d", filemtime("./upload/".$files[$a]))."</span><br><br>\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"./upload/".$files[$a]."\">Download</a><hr>\n          </p>";
+          echo "<p style=\"background-color: white;\">\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Lime; border: 2px solid Lime; border-radius: 4px; padding: 4px;\">".$files[$a]."</a><br><br>\n            <span style=\"background-color: white;\">File Size : ".getFilesize("./upload/".$files[$a])." MB</span><br><br>\n            <span style=\"background-color: white;\">Uploaded on ".date("Y-m-d H:m:d", filemtime("./upload/".$files[$a]))."</span><br><br>\n            <a href=\"./upload/".$files[$a]."\" style=\"background-color: Dodgerblue; border: 2px solid Black; border-radius: 4px; padding: 4px;\" download=\"./upload/".$files[$a]."\">Download</a><hr>\n          </p>\n";
         };
       };
 
