@@ -1,6 +1,6 @@
 # UplodFile
 
-By ibrah Modified Rizxyu
+By [`ibrah`](https://github.com/ibrahKrep) Modified Rizxyu, Ibrah & Restu
 
 ## Demo
 
