@@ -61,6 +61,6 @@ function getFilesize($file) {
       ?>
     </div>
     <br>
-    <span><b>File Uploader By <a href="https://github.com/Rizxyu">Rizxyu</a> & <a href="https://github.com/MuhammadRestu999">MuhammadRestu999</a></b></span>
+    <span><b>File Uploader By <a href="https://github.com/Rizxyu">Rizxyu</a> & <a href="https://github.com/MuhammadRestu999">MuhammadRestu999</a><a href="https://github.com/ibrahKrep"</b></span>
   </body>
 </html>
